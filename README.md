@@ -11,7 +11,7 @@ By default, the service will charge 1000 satoshis for every day of revenue stats
 ## How to Use
 If you want to get stats from a node running this service, it is as simple as:
 ```
-$ 21 buy http://[fcce:a977:eec7:c71c:1c43:0000:0000:0001]:7017?days=3
+$ 21 buy http://[fcce:a977:eef6:442a:aaf8:0000:0000:0001]:7017?days=3
 ```
 This returns 3 days worth of stats:
 ```
