@@ -8,7 +8,7 @@ definitions:
       state: {type: string}
       zip_code: {type: string}
     type: object
-host: 10.244.119.122:7017
+host: '[fcce:a977:eec7:c71c:1c43:0000:0000:0001]:1017'
 info:
   contact: {email: james@esixteen.co, name: eSixteen.co }
   description: Get machine revenue stats on demand for bitcoin.
@@ -16,7 +16,8 @@ info:
   x-21-category: utilities
   x-21-github-project-url: https://github.com/pooleja/StatsE16
   x-21-keywords: [stats, revenue, bitcoin, money, statistics]
-  x-21-quick-buy: "$ 21 buy http://10.244.119.122:7017/"
+  x-21-quick-buy: "$ 21 buy http://[fcce:a977:eec7:c71c:1c43:0000:0000:0001]:7017/"
+  x-21-app-image: https://cdn.filepicker.io/api/file/xpq5tK5nSTm5ZuH2B3BW
   x-21-total-price: {max: 100, min: 100}
 paths:
   /:

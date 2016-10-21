@@ -31,15 +31,6 @@ log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 
 
-@app.route('/manifest')
-def manifest():
-    """Provide the app manifest to the 21 crawler.
-    """
-    with open('./manifest.yaml', 'r') as f:
-        manifest = yaml.load(f)
-    return json.dumps(manifest)
-
-
 def get_payment_amt(request):
     """
     Return the amount of the request based on the number of days being requested.
@@ -103,6 +94,6 @@ if __name__ == '__main__':
                 raise ValueError("error starting revE16-server.py daemon")
         else:
             print("Server running...")
-            app.run(host='0.0.0.0', port=7017)
+            app.run(host='::', port=7017)
 
     run()
